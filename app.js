@@ -17,7 +17,7 @@ app.engine( 'html', nunjucks.render ) ;
 app.set( 'view engine', 'html' ) ;
 
 // Respond to all GET requests by rendering relevant page using Nunjucks
-app.get( '/:page', function( req, res ) {
+app.get( '', function( req, res ) {
     res.render( "index.html" ) ;
 } ) ;
 
